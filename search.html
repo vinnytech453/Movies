@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Search Movies</h1>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <div id="suggestions"></div>
+        </div>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+    <main>
+        <section id="search-results">
+            <h2>Search Results</h2>
+            <div id="search-movies" class="movie-container"></div>
+        </section>
+        <section id="trending-section">
+            <h2>Trending Movies</h2>
+            <div id="trending-movies" class="movie-container"></div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="movies.html"><i class="fas fa-film"></i> Movies</a></li>
+                <li><a href="tvshows.html"><i class="fas fa-tv"></i> TV Shows</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="search.js"></script>
+</body>
+</html>

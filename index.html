@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>free movies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>free Movie Site</h1>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <div id="suggestions"></div>
+        </div>
+        <button id="theme-toggle">light/dark</button>
+    </header>
+    <main>
+        <section id="trending-section">
+            <h2>Trending Movies</h2>
+            <div id="trending-movies" class="movie-container"></div>
+        </section>
+        <section id="latest-trailers-section">
+            <h2>Latest Trailers</h2>
+            <div id="latest-trailers" class="movie-container"></div>
+        </section>
+        <section id="genres-container">
+            <!-- Genre containers will be appended here by JavaScript -->
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="movies.html"><i class="fas fa-film"></i> Movies</a></li>
+                <li><a href="tv-shows.html"><i class="fas fa-tv"></i> TV Shows</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="movie-details"></div>
+            <div id="trailer-container"></div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
